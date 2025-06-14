@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "baseUrl": ".",
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    // "allowImportingTsExtensions": true,
+    // "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    // "noEmit": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+    "noImplicitAny": true,
+    // "composite": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "incremental": true,
+    "paths": {
+      "@/*": ["src/*"],
+      "*": [
+        "node_modules/*",
+        "src/types/*"
+      ]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
+
