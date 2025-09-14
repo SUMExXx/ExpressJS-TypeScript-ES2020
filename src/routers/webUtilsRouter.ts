@@ -1,7 +1,7 @@
 import express from 'express';
 // import multer from 'multer';
 import dotenv from 'dotenv';
-import { contactEmail, requestQuote } from '../controllers/webUtilsController.js';
+import { contactFounder } from '../controllers/webUtilsController.js';
 
 dotenv.config();
 
@@ -15,8 +15,6 @@ const webUtilsRouter = express.Router();
   message: String
 */
 
-webUtilsRouter.post('/contact-email', contactEmail)
-
-webUtilsRouter.post('/request-quote', requestQuote)
+webUtilsRouter.post('/contact-founder', contactFounder)
 
 export default webUtilsRouter;
